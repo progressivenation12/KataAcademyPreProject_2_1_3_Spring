@@ -10,9 +10,9 @@ public class Application {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         for (int i = 0; i < 5; i++) {
-            AnimalsCage bean =
+            AnimalsCage animalsCage =
                     context.getBean("animalsCage", AnimalsCage.class);
-            bean.whatAnimalSay();
+            animalsCage.whatAnimalSay();
         }
     }
 }
